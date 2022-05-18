@@ -1,0 +1,118 @@
+<!-- ESTRUCTURA BÁSICA DE HTML-->
+
+<!DOCTYPE html> <!-- Versión, es obligatorio -->
+<html> <!--Dentro de esta etiqueta tenemos toda la página: lo que se ve y lo que no vemos-->
+    <head>
+        <!-- Dentro de esta etiqueta tenemos las cosas que no se ven.-->
+        <meta charset='utf-8'> <!-- Etiqueta para poder usar tíldes y otros signos-->
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>PRIMERA PAGINA WEB</title> <!-- Aquí agregamos el título -->
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <script src='main.js'></script>
+
+        <!-- METADATOS-->
+        <meta name="keywords" content="harina,leche,huevos,galletas"><!-- Palabras claves para hallar la página en un buscador -->
+        <meta name="description" content="Alimentos S.A. es una compañía destinada a brindar los mejores alimentos de calidad ent tiempo y forma"> <!-- Descripcion de la página -->
+        <meta name="author" content="danko valderrama"> <!-- Autor de la página -->
+        <meta name="copyright" content="Facebook. Inc."> <!-- Ponemos el nombre de la empresa registrada dueña de los derechos de esa empresa-->
+        <meta name="robots" content="index"> <!-- Aquí decidiremos si la página se verá al buscarla un "buscador" o si no. Para hacer eso escribimos dentro de contenido index o noindex-->
+    </head>
+    <body>
+        <!-- Dentro de esta etiqueta se coloca todo lo que si se ve -->
+        <h1>Hola Mundo</h1>
+        <!--Este título debe colocarse solo una vez-->
+        <h2>Hola Mundo</h2>
+        <!--Este titulo y el siguiente se escriben un par de veces-->
+        <h3>Hola Mundo</h3>
+        <h4>Hola Mundo</h4>
+        <!--Los siguientes títulos pueden escribirse ilimitadas veces-->
+        <h5>Hola Mundo</h5>
+        <h6>Hola Mundo</h6>
+
+        <!-- Las siguientes etiquetas son para modificar las letras: -->
+        <b>Negrita</b>
+        <i>Itálica</i>
+        <strike>Tachada</strike>
+        <small>Pequeña</small>
+
+        <p>
+            <!--Esta etiqueta es para escribir párrafos-->
+            Lorem, ipsum dolor sit amet <b>consectetur adipisicing elit</b>. Ex in asperiores id quod pariatur <b>fugiat</b> vel quo ut maxime, cupiditate a voluptatem debitis deserunt! Dolorem alias exercitationem quasi? Reiciendis, alias.
+        </p>
+
+        <!-- GENERAR ENLACES: las etiquetas <a> son para generar ENLACES mediante el comando href. -->
+        <!-- Enlaces a otras páginas web: -->
+        <a href="https://facebook.com">Enlace a Facebook</a>
+        <!-- Enlaces a páginas de forma LOCAL: -->
+        <a href="pagina2.html">Enlace a Pagina 2</a>
+        <!-- Y enlaces a páginas de otras carpetas de forma LOCAL. Además, en el siguiente ejemplo, agregamos el comando target=":BLANK" para abrir el enlace en otra pestaña:  : -->
+        <a href="pagina3/pagina3.html" target="_BLANK">Enlace a página 3</a>
+
+        <!-- LISTAS: para crear listas (como una lista de compras)-->
+        <!-- Lista <ul>-->
+        <h2>Lista con puntitos</h2>
+        <ul>
+            <li>Pan</li>
+            <li>Leche</li>
+            <li>Harina</li>
+            <li>Coliflor</li>
+            <li>Champignon</li>
+        </ul>
+        <!-- Lista <ol>: -->
+        <h2>Lista enumerada</h2>
+        <ol>
+            <li>Pan</li>
+            <li>Leche</li>
+            <li>Harina</li>
+            <li>Coliflor</li>
+            <li>Champignon</li>
+        </ol>
+
+        <!-- INSERTAR MULTIMEDIA.-->
+        <!-- Para insertar imágenes usaremos el comando <img src="">, para insertar videos <video src=""> y para insertar audios <audio src="">. Ejemplo: -->
+        <h2>Mi primera imagen en html</h2>
+        <p>
+            Aquí voy a insertar mi <b>imagen</b>: 
+        </p>
+        <img src="dankoYVicente.jpg" height="270px">
+        <!-- OBSERVACIÓN: no es necesario cerrar la etiqueta de imagen. Pero si hay que cerrar las etiquetas de audio y video.-->
+        <h2>Mi primer video en html</h2>
+        <p>
+            Aquí voy a insertar mi <b>video</b>: 
+        </p>
+        <video src="danko.mp4" height="400px" controls></video>
+        
+        <h2>Mi primer audio en html</h2>
+        <p>
+            Aquí voy a insertar mi <b>audio</b>:  
+        </p>
+        <audio src="danko.mp3" controls></audio>
+
+        <!-- AUMENTAR o DISMINUIR el tamaño. A pesar de ser posible cambiar el tamaño de las imágenes, no se recomienda esto, para eso es CSS. Usaremos height o width en el ejemplo anterior. Dejaremos la imagen como la pillamos en un principio-->
+
+        <!-- ETIQUETA <div>: esta etiqueta se utiliza para separar contenido y agruparlo -->
+        <div>
+            <h4>Nombre del producto</h4>
+            <p>
+                Precio: <b>$990</b>
+            </p>
+        </div>
+
+        <!-- ETIQUETA <form> PARA REALIZAR FORMULARIOS -->
+        <form>
+            <input type="text" required> <!-- Este atributo nos indica que es obligatoria la respuesta en este espacio.-->
+            <input type="password">
+            <input type="number">
+            <input type="email" value="ejemplo@correo.sha"> <!-- Este atributo nos permite asignar un texto al espacio de input. Al escribir sobre él se elimina el texto-->
+            <input type="color">
+            <input type="range" min="1" max="5"> <!-- Este atributo indica el valor mínimo y máximo para asignar en el rango-->
+            <input type="time">
+            <input type="date">
+            <input type="button" value="Engancha akí cabrón"> <!-- Este atributo asigna un nombre al botón-->
+            <input type="submit">
+            <textarea cols="20" rows="5" readonly >Hola Como Estas</textarea> <!--cols: anchura media, rows: cantidad de lineas, readonly: no se puede escribir nada dentro. Para agregar texto lo escribimos dentro entre las etiquetas-->
+        </form>
+
+    </body>
+</html>
